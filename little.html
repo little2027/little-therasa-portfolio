@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Little Therasa Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #000;
+      color: white;
+      line-height: 1.6;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(to bottom, #000, #111);
+    }
+
+    .hero img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 5px solid #ff0080;
+      object-fit: cover;
+      box-shadow: 0 0 20px #ff0080;
+    }
+
+    .hero h1 {
+      font-size: 55px;
+      margin-top: 20px;
+    }
+
+    .hero p {
+      max-width: 800px;
+      margin-top: 15px;
+      color: #ccc;
+      font-size: 20px;
+    }
+
+    .btns {
+      margin-top: 30px;
+    }
+
+    .btns a {
+      text-decoration: none;
+      color: white;
+      border: 2px solid #ff0080;
+      padding: 12px 25px;
+      margin: 10px;
+      border-radius: 30px;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .btns a:hover {
+      background: #ff0080;
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 50px;
+      color: #ff0080;
+    }
+
+    .about,
+    .internship,
+    .project-card,
+    .achievement-card {
+      background: #111;
+      padding: 30px;
+      border-radius: 20px;
+      border: 1px solid #333;
+      box-shadow: 0 0 20px rgba(255,255,255,0.05);
+    }
+
+    .skills-container,
+    .projects,
+    .achievements {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .skill {
+      background: #111;
+      padding: 25px;
+      text-align: center;
+      border-radius: 20px;
+      border: 1px solid #333;
+      transition: 0.3s;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .skill:hover,
+    .project-card:hover,
+    .achievement-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px rgba(255,0,128,0.5);
+    }
+
+    .internship ul {
+      margin-top: 20px;
+      padding-left: 20px;
+    }
+
+    .internship li {
+      margin-bottom: 10px;
+      color: #ccc;
+    }
+
+    .project-card h3,
+    .achievement-card h3 {
+      margin-bottom: 15px;
+      color: white;
+      font-size: 28px;
+    }
+
+    .project-card p,
+    .achievement-card p,
+    .about p {
+      color: #ccc;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 15px 0;
+      font-size: 20px;
+      color: #ccc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid #333;
+      color: #777;
+    }
+
+    @media(max-width:768px) {
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .title {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <img src="C:/Users/Little Theresa Mary/Downloads/little.jpeg" alt="Profile Image">
+
+    <h1>Little Therasa Mary S</h1>
+
+    <p>
+      Frontend Developer | B.Sc Computer Science Student
+    </p>
+
+    <p>
+      Passionate about software development, problem solving and creating modern web applications.
+    </p>
+
+    <div class="btns">
+      <a href="mailto:littletherasa15@gmail.com">Contact</a>
+      <a href="https://github.com/little2027" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/little-therasa-mary-susai-raj-9172942a5/" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="title">About Me</h2>
+
+    <div class="about">
+      <p>
+        I am currently pursuing Bachelor of Computer Science at Don Bosco College.
+        I have strong interest in Full Stack Development and modern web technologies.
+        I enjoy learning new technologies and building responsive websites.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="title">Technical Skills</h2>
+
+    <div class="skills-container">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React.js</div>
+      <div class="skill">Python</div>
+      <div class="skill">Django</div>
+      <div class="skill">SQL Server</div>
+      <div class="skill">Data Base</div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="title">Internship</h2>
+
+    <div class="internship">
+      <h3>Jegan Digiteck Pvt Ltd</h3>
+      <p>Full Stack Foundation Internship (2025 - 2026)</p>
+
+      <ul>
+        <li>Learned HTML and CSS for web design.</li>
+        <li>Worked with React.js frontend development.</li>
+        <li>Learned API and backend concepts.</li>
+        <li>Improved Full Stack Development skills.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="title">Projects</h2>
+
+    <div class="projects">
+      <div class="project-card">
+        <h3>Rider Safety Assurance System</h3>
+
+        <p>
+          IoT based project that detects alcohol consumption and drowsiness of riders using sensors to improve road safety.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+
+        <p>
+          Modern responsive personal portfolio website developed using HTML, CSS and JavaScript.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="title">Achievements</h2>
+
+    <div class="achievements">
+      <div class="achievement-card">
+        <h3>Leadership</h3>
+
+        <p>
+          Served as Secretary of B.Sc Computer Science for the academic year 2025-2026.
+        </p>
+      </div>
+
+      <div class="achievement-card">
+        <h3>Sports & IT Fest</h3>
+
+        <p>
+          Won multiple certificates in sports events and inter-college IT Fest competitions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2 class="title">Contact Me</h2>
+
+    <p>📧 littletherasa15@gmail.com</p>
+    <p>📞 9342640018</p>
+    <p>📍 Thiruvannamalai, Tamil Nadu</p>
+
+    <div class="btns">
+      <a href="mailto:littletherasa15@gmail.com">Hire Me</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Little Therasa Mary S | Portfolio Website
+  </footer>
+
+</body>
+</html>
